@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot System</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+</head>
+<style>
+    /* styles.css */
+    h1 {
+        color: white;
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .signup-container {
+        background-color: #1c1c1c;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    .signup-header h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+    }
+
+    .signup-btn {
+        background-color: #44f42199;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-link {
+        margin-top: 20px;
+    }
+
+    .login-link a {
+        color: #1db954;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>SignUp</h1>
+        </div>
+        <form class="signup-form" action="/signup" method="POST">
+            <div class="input-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-group">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Enter your UserID" required>
+            </div>
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password"></label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter Pasword"
+                    required>
+            </div>
+
+
+            <button type="submit" class="signup-btn"> <a href="dbms.html"></a>Sign Up</button>
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
