@@ -9,33 +9,78 @@
 
     <title>Parking Lot System</title>
     <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #fff; /* White text color */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         #banner {
             height: 250px;
             width: 100%;
             object-fit: cover;
         }
-    </style>
-    <div>
-        <div class="p-1 mb-2 bg-primary text-white"> </div>
-        <a href="http://127.0.0.1:5501/praking/templates/Home.html"
-            class="mt-4 btn btn-outline-primary btn-block text-center">Home</a>
-        <a href="http://127.0.0.1:5501/praking/templates/signup.html"
-            class="mt-4 btn btn-outline-primary btn-block text-center">SignUp</a>
-        <a href="http://127.0.0.1:5501/praking/templates/login.html"
-            class="mt-4 btn btn-outline-primary btn-block text-center">SignIn</a>
 
-    </div>
-    <link rel="shortcut icon" href="home.html" type="image/x-icon">
+        .container {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-custom {
+            background-color: #1db954;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #14833b;
+            color: #fff;
+        }
+
+        .contact-btn {
+            background-color: #1db954;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .contact-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            color: #aaa;
+        }
+    </style>
+    <link rel="shortcut icon" href="/praking/favicon.png" type="image/x-icon">
 </head>
 
-
 <body>
-    <div class="container">
-        <h1 style="font-family:fantasy" class="text-center mt-2 mb-4">Parking Lot System</h1>
-        <img id="banner" class="img-thumbnail" src="/praking/static/park.jpg" alt="">
-        <h3 class="text-center mt-2 mb-4">About </h3>
+    <header class="bg-primary text-white text-center p-3">
+        <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Parking Lot System</h1>
+        <nav>
+            <a href="http://127.0.0.1:5501/praking/templates/Home.html" class="btn btn-outline-light btn-custom">Home</a>
+            <a href="http://127.0.0.1:5501/praking/templates/signup.html" class="btn btn-outline-light btn-custom">Sign Up</a>
+            <a href="http://127.0.0.1:5501/praking/templates/login.html" class="btn btn-outline-light btn-custom">Sign In</a>
+        </nav>
+    </header>
 
-        <p style="font-family:Arial, Helvetica, sans-serif" class="lead">
+    <div class="container mt-4">
+        <img id="banner" class="img-fluid img-thumbnail" src="/praking/static/park.jpg" alt="Parking Lot">
+        <h3 class="text-center mt-4">About</h3>
+        <p class="lead">
             A parking lot system is implemented using a DBMS to manage vehicle number plates, check-in/out times, and
             billing. Use a database schema with tables for vehicles, parking sessions, and bills. Track vehicles with
             their number plates, record check-in times upon entry, and update with check-out times upon exit. Calculate
@@ -44,19 +89,12 @@
             historical reporting. This system ensures accurate tracking and billing for parking activities using
             structured database management principles and also has a monthly pass system.
         </p>
-
-
-
     </div>
 
-    <div style="text-align:center">
-        <button class="mt-5 btn btn-primary">ContactUs</button>
-        <p class="mt-2 mb-4">CopyRights @parking</p>
+    <div class="text-center mt-5">
+        <a href="mailto:contact@parkinglot.com" class="contact-btn">Contact Us</a>
+        <p class="footer mt-4">© 2024 Parking System. All rights reserved.</p>
     </div>
-
-
-
-
 </body>
 
 </html>
